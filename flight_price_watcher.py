@@ -56,5 +56,13 @@ def amadeus_search(token,origin,destination,date_from,date_to,curr="ARS",adults=
     d=start
     while d<=end:
         if trip_type=="oneway":
-            params={"originLocationCode":origin,"destinationLocationCode":destination,"departureDate":d.
+           params = {
+    "originLocationCode": origin,
+    "destinationLocationCode": destination,
+    "departureDate": departure_date,
+    "adults": 1,
+    "currencyCode": "USD",
+    "max": 5
+}
+
 
